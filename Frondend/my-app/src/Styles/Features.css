@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.features {
+  height: 250px;
+  background-color: rgb(216, 214, 202);
+  display: flex;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.features h1{
+  font-size: 15px;
+}
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(95, 92, 77);
+  border: dotted;
+  border-radius: 50%;
+  margin-left: 80px;
+  border: 20px;
+  text-align: center;
+}
+.card img {
+  width: 120px;
+  padding-top: 55px;
+}

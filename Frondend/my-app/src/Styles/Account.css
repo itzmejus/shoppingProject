@@ -1,0 +1,31 @@
+.account{
+    height: 600px;
+    background-color: rgb(216, 214, 202);
+    padding-left: 100px;
+    padding-top: 50px;
+
+}
+.profile{
+    height: 500px;
+    width: 1300px;
+    background-color: antiquewhite;
+    display: flex;
+    padding: 10px;
+}
+.profile-left{
+    height: 490px;
+    width: 50%;
+    margin-right: 10px;
+    text-align: center;
+    background-color: rgb(201, 223, 223);
+}
+.profile-left img{
+    height: 450px;
+}
+.profile-right{
+    height: 490px;
+    width: 50%;
+    margin-right: 10px;
+    text-align: center;
+    background-color: rgb(153, 191, 191);
+}

@@ -47,7 +47,7 @@ function Account() {
             </h2>
             <h2>
               address
-              <input
+              <input 
                 type="text"
                 placeholder="please enter mail"
                 onChange={(e) => {

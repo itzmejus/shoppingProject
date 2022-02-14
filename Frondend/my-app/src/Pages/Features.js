@@ -6,6 +6,7 @@ import bath from '../media/bath.png'
 
 function Features() {
   return (
+    
     <div className="features">
       <div className="card">
         <img src={bed} alt='img' />

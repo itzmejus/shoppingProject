@@ -1,18 +1,21 @@
 import React, { useState } from "react";
 import "../Styles/Login.css";
 import Axios from "axios";
-
-import { useNavigate } from "react-router-dom";
 function Login() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  let navigate = useNavigate();
 
   const registerUser = () => {
-    Axios.post("http://localhost:5000/adduser" ,{name: name,email:email,password: password}).then(()=>{
-      alert('success')
-    }).catch('failed')
+    Axios.post("http://localhost:5000/adduser", {
+      name: name,
+      email: email,
+      password: password,
+    })
+      .then(() => {
+        alert("success");
+      })
+      .catch("failed");
   };
 
   const log = (e) => {

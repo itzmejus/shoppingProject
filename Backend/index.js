@@ -1,6 +1,7 @@
 import express from "express"; //import Express and allows us to use it inside our server.js file.
 import mongoose from "mongoose";
 import cors from "cors";
+import saveAddressModel from "./models/saveAddress.js";
 import UserModel from "./models/User.js";
 /* import userRouter from './routes/users' */
 const port = process.env.PORT || 5000; // It will set the Express server on which port it will run on.
@@ -35,8 +36,34 @@ app.post("/adduser", async (req, res) => {
   await user.save();
   res.send("data inserted");
 });
+
 app.get("/user/read", async (req, res) => {
   UserModel.find({}, (err, result) => {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(result);
+    }
+  });
+});
+
+//insert  user details
+app.post("/address", async (req, res) => {
+  const email = req.body.email;
+  const address = req.body.address;
+  const phone = req.body.phone;
+  const useraddress = new saveAddressModel({
+    email: email,
+    address: address,
+    phone: phone,
+  });
+  await useraddress.save();
+  res.send("address inserted");
+});
+
+//display address
+app.get("/user/address", async (req, res) => {
+  saveAddressModel.find({}, (err, result) => {
     if (err) {
       res.send(err);
     } else {

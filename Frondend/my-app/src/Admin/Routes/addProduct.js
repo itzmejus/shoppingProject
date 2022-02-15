@@ -6,10 +6,10 @@ function addProduct() {
     <div>
         <AdminNavbar/>
         <h1>
-            hi
+            add product
         </h1>
     </div>
   )
 }
 
-export default addProduct
+export default addProduct;

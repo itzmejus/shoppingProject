@@ -23,7 +23,7 @@ mongoose
     console.log("error:", e);
   });
 
-//insert
+//insert login details
 app.post("/adduser", async (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
@@ -47,7 +47,7 @@ app.get("/user/read", async (req, res) => {
   });
 });
 
-//insert  user details
+//insert  user address details
 app.post("/address", async (req, res) => {
   const email = req.body.email;
   const address = req.body.address;
@@ -71,6 +71,8 @@ app.get("/user/address", async (req, res) => {
     }
   });
 });
+
+//insert admin add products 
 
 // create a GET route
 app.get("/", (req, res) => {

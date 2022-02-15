@@ -10,7 +10,6 @@ import Login from '../Routes/Login';
 function UserSection() {
   return (
     <Router>
-    <Navbar/>
     <Routes>
       <Route path='/' element={<Homepage/>}/>
       <Route path='/cart' element={<Cart/>}/>

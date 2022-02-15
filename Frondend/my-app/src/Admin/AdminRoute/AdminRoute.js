@@ -7,7 +7,7 @@ function AdminRoute() {
     <div>
       <Router>
         <Routes>
-               <Route path='/admin' element={<AdminNavbar/>}/>
+               <Route path='/admin/home' element={<AdminNavbar/>}/>
 
         </Routes>
       </Router>

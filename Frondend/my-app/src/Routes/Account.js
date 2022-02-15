@@ -3,6 +3,7 @@ import "../Styles/Account.css";
 import Axios from "axios";
 
 import user from "../media/user.png";
+import Navbar from "../Pages/Navbar";
 function Account() {
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
@@ -25,7 +26,9 @@ function Account() {
     console.log("logged success");
   };
   return (
-    <div className="account">
+    <div>
+      <Navbar/>
+ <div className="account">
       <div className="profile">
         <div className="profile-left">
           <h1>Christophor</h1>
@@ -72,7 +75,9 @@ function Account() {
         </div>
       </div>
     </div>
-  );
+
+    </div>
+     );
 }
 
 export default Account;

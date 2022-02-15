@@ -23,6 +23,7 @@ function Navbar() {
         <Link to="/cart">Cart</Link>
         <Link to="/account">Account</Link>
         <Link to="/login">Login</Link>
+        <Link to='/admin/home'>Admin?</Link>
       </div>
       {/* pages section */}
     </div>

@@ -2,12 +2,14 @@ import React from "react";
 import chair from "../media/2chair.png";
 import redchair from "../media/redchair.png";
 import chair3 from "../media/chair3.png";
-
+import Navbar from "../Pages/Navbar";
 import "../Styles/Cart.css";
 
 function Cart() {
   return (
-    <div className="cartmain">
+   <div>
+     <Navbar/>
+      <div className="cartmain">
       <h1>Total items in your Cart</h1>
       <div className="Headsection">
         <div className="cart">
@@ -31,6 +33,7 @@ function Cart() {
       </div>
       
     </div>
+   </div>
   );
 }
 

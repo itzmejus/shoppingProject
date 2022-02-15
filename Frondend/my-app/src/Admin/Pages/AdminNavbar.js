@@ -10,7 +10,7 @@ function AdminNavbar() {
             <Link to='/admin/addproduct'>Add Product</Link>
             <Link to='/admin/editproduct'>Edit Product</Link>
             <Link to='/admin/loggedusers'>Users</Link>
-            <Link to='/admin/logout'>Logout</Link>
+            <Link to='/'>Logout</Link>
         </div>
 
     </div>

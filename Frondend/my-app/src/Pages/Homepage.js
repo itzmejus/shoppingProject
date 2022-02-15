@@ -4,9 +4,12 @@ import slider1 from "../media/slider-1.png";
 import Features from "./Features";
 import Footer from "./Footer";
 import ProductsCard from "./ProductsCard";
+import Navbar from "./Navbar";
 function Homepage() {
   return (
     <div>
+          <Navbar/>
+
       <div className="home">
         {/* left section start */}
         <div className="left">
